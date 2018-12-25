@@ -272,7 +272,9 @@ int32_t Player::getWeaponSkill(const Item* item) const
 		}
 
 		case WEAPON_AXE: {
-			attackSkill = getSkillLevel(SKILL_AXE);
+			// Line below became commented due to testing stopping increasing dmg on attack speed skill gain
+			//attackSkill = getSkillLevel(SKILL_AXE);
+			attackSkill = 0;
 			break;
 		}
 
